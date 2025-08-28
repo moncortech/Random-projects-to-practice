@@ -1,0 +1,28 @@
+#include <stdio.h>
+#include <cs50.h>
+#include <time.h>
+#include <stdlib.h>
+
+int main(void)
+{
+    // Seed the random number generator
+    srand(time(NULL));
+
+    // Generate random number between 1 and 100
+    int r = rand() % 100 + 1;
+
+    // Prompt the user for a guess
+    int n = get_int("Guess the number (1-100): ");
+
+    // Compare guess with the random number
+    if (n == r)
+    {
+        printf("Good job! You guessed it!\n");
+    }
+    else
+    {
+        printf("You failed. The number was %d.\n", r);
+    }
+
+    return 0;
+}
