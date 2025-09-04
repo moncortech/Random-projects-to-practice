@@ -17,7 +17,7 @@ int main(void)
     // Compare guess with the random number
     if (n == r)
     {
-        printf("Good job! You guessed it!\n");
+        printf("ood job! You guessed it!\n");
     }
     else
     {
