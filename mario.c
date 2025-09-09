@@ -9,7 +9,7 @@ int main(void)
     srand(time(NULL));
 
     // Generate random number between 1 and 100
-    int r = rand() % 100 + 1;
+    int r = rand() % 10 + 1;
 
     // Prompt the user for a guess
     int n = get_int("Guess the number (1-100): ");
